@@ -1,10 +1,12 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Poppins&pause=1000&width=435&lines=Proyecto+Integrador)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=53&pause=1000&center=true&vCenter=true&width=460&lines=Urban+Clothes+)](https://git.io/typing-svg)
 
 # Proyecto de eCommerce de Indumentaria (Frontend)
 
 ## Descripción del Proyecto
 
 Este proyecto consiste en el desarrollo del **frontend** para un **eCommerce de indumentaria**, donde los usuarios pueden explorar, buscar y comprar ropa. El objetivo es crear una experiencia de usuario fluida, responsiva y atractiva, utilizando **HTML**, **CSS**, y **JavaScript puro**, sin frameworks adicionales.
+
+![alt text](<Screenshot 2024-11-15 at 21-34-40 Urban Clothes- eCommerce Website.png>)
 
 ## Características Principales
 
@@ -15,7 +17,7 @@ Este proyecto consiste en el desarrollo del **frontend** para un **eCommerce de 
 - **Responsividad**: Diseño adaptable a diferentes dispositivos (móviles, tablets y escritorio) utilizando CSS y JavaScript.
 
 ## Tecnologías Utilizadas
-
+![lenguajes utilizados](https://imgs.search.brave.com/Xo2kes1eZSI4UI0BPeX-jU1-ctyVU1jlRq6M1oGUS98/rs:fit:860:0:0/g:ce/aHR0cDovL3d3dy5j/dXJzb3NnaXMuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE3/LzA2L2xlbmd1YWpl/c18xLnBuZw)
 - **HTML5**: Estructura principal del sitio.
 - **CSS3**: Para el diseño y la apariencia del eCommerce, con un enfoque en un diseño limpio y adaptable.
 - **JavaScript (ES6+)**: Manejo de la lógica de interacción, como el carrito de compras, filtrado de productos, validación de formularios y manipulación del DOM.
