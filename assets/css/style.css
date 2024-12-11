@@ -1653,14 +1653,7 @@
     .header-social-container,
     .header-top-actions { display: none; }
   
-    .header-alert-news {
-      color: var(--sonic-silver);
-      font-size: var(--fs-9);
-      text-transform: uppercase;
-    }
-  
-    .header-alert-news b { font-weight: var(--weight-500); }
-  
+   
     .header-main { padding: 25px 0; }
   
     .mobile-bottom-navigation {
@@ -1782,7 +1775,6 @@
   
     .header-top-actions select:hover { color: var(--eerie-black); }
   
-    .header-search-container { min-width: 300px; }
   
   
   
@@ -1907,7 +1899,7 @@
   
     .header-main .container { gap: 80px; }
   
-    .header-search-container { flex-grow: 1; }
+   
   
   
   
@@ -2097,7 +2089,7 @@
       overflow: hidden;
       border: 1px solid #ccc;
       border-radius: 8px;
-      background: url(/assets/img/30656.jpg);
+      background: url(/assets/img/banner/modern-sport-composition-with-runner-elements.jpg);
     }
   
     .slider-1 {
