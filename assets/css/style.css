@@ -18,6 +18,11 @@
     --cultured: hsl(0, 0%, 93%);
     --white: hsl(0, 100%, 100%);
     --onyx: hsl(0, 0%, 27%);
+
+    --facebook-cl: rgb(59, 89, 152);
+    --linked_in-cl: rgb(23, 106, 255);
+    --twitter-cl: rgb(85, 85, 85);
+    --instagram-cl: linear-gradient(#8a3ab9, #e95950, #fccc63);
   
     /* typography */
   
@@ -72,7 +77,7 @@
     cursor: pointer;
   }
   
-  img, ion-icon, button, a { display: block; }
+  img,  button, a { display: block; }
   
   span { display: inline-block; }
   
@@ -309,99 +314,7 @@
   
   
   
-  
-  
-  /**
-   * NOTIFICATION TOAST 
-   */
-  
-  .notification-toast {
-    position: fixed;
-    bottom: 80px;
-    left: 20px;
-    right: 20px;
-    background: var(--white);
-    max-width: 300px;
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    padding: 15px;
-    border-radius: var(--border-radius-md);
-    box-shadow: 0 5px 20px hsla(0, 0%, 0%, 0.15);
-    transform: translateX(calc(-100% - 40px));
-    transition: 0.5s ease-in-out;
-    z-index: 5;
-    animation: slideInOut 10s ease-in-out infinite;
-  }
-  
-  @keyframes slideInOut {
-  
-    0%,
-    45%,
-    100% {
-      transform: translateX(calc(-100% - 40px));
-      opacity: 0;
-      visibility: hidden;
-    }
-  
-    50%,
-    95% {
-      transform: translateX(0);
-      opacity: 1;
-      visibility: visible;
-    }
-  
-  }
-  
-  .notification-toast.closed { display: none; }
-  
-  .toast-close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: var(--sonic-silver);
-  }
-  
-  .toast-close-btn ion-icon { --ionicon-stroke-width: 50px; }
-  
-  .toast-banner {
-    width: 70px;
-    height: 70px;
-    border: 1px solid var(--cultured);
-    border-radius: var(--border-radius-sm);
-  }
-  
-  .toast-banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-  }
-  
-  .toast-detail {
-    width: calc(100% - 85px);
-    padding-right: 10px;
-  }
-  
-  .toast-message {
-    font-size: var(--fs-10);
-    color: var(--sonic-silver);
-    margin-bottom: 8px;
-  }
-  
-  .toast-title {
-    font-size: var(--fs-7);
-    font-weight: var(--weight-500);
-    color: var(--onyx);
-  }
-  
-  .toast-meta {
-    font-size: var(--fs-10);
-    color: var(--sonic-silver);
-  }
-  
-  
-  
+
   
   
   /*-----------------------------------*\
@@ -414,40 +327,16 @@
   
   .header-main {
     padding: 20px 0;
-    border-bottom: 1px solid var(--cultured);
+   
   }
   
   .header-logo { margin-bottom: 20px; }
   
   .header-logo img { margin: auto; }
   
-  .header-search-container { position: relative; }
+ 
   
-  .header-search-container .search-field {
-    font-size: var(--fs-7);
-    color: var(--onyx);
-    padding: 10px 15px;
-    padding-right: 50px;
-    border: 1px solid var(--dodgerBlue);
-    border-radius: var(--border-radius-md);
-  }
-  
-  .search-field::-webkit-search-cancel-button { display: none; }
-  
-  .search-btn {
-    background: var(--white);
-    position: absolute;
-    top: 50%;
-    right: 2px;
-    transform: translateY(-50%);
-    color: var(--onyx);
-    font-size: 18px;
-    padding: 8px 15px;
-    border-radius: var(--border-radius-md);
-    transition: color var(--transition-timing);
-  }
-  
-  .search-btn:hover { color: var(--dodgerBlue); }
+ 
   
   .mobile-bottom-navigation {
     background: var(--white);
@@ -468,7 +357,7 @@
   
   .mobile-bottom-navigation .action-btn {
     position: relative;
-    font-size: 26px;
+    font-size: 20px;
     color: var(--eerie-black);
     padding: 10px;
   }
@@ -761,7 +650,7 @@
   }
   
   .category-btn {
-    color: var(--salmon-pink);
+    color: var(--dodgerBlue);
     font-size: var(--fs-9);
     font-weight: var(--weight-500);
     text-transform: capitalize;
@@ -2141,11 +2030,6 @@
   
   
   
-    /**
-     * #NOTIFICATION TOAST 
-     */
-  
-    .notification-toast { bottom: 30px; }
   
   
   
@@ -2153,24 +2037,83 @@
      * #HEADER 
      */
   
-    .header-social-container {
+     .header-social-container {
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: 15px;
     }
   
-    .header-social-container .social-link {
-      padding: 5px;
+    .header-social-container .social-1,
+    .social-2,
+    .social-3,
+    .social-4 {
+      
       background: hsl(0, 0%, 95%);
       border-radius: var(--border-radius-sm);
       color: var(--sonic-silver);
       transition: var(--transition-timing);
+      width: 30px;
+      height: 30px;
+  
+      cursor: pointer;
+      text-align: center;
+      line-height: 37px;
+     
+      
+      
+  
     }
   
-    .header-social-container .social-link:hover {
-      background: var(--dodgerBlue);
+    .social-1:hover {
+      background: var(--facebook-cl);
       color: var(--white);
+  
+  
+  
+      
     }
+  
+    .social-2:hover {
+      background: var(--twitter-cl);
+      color: var(--white);
+    
+    }
+  
+    .social-3:hover {
+      background: var(--instagram-cl);
+      color: var(--white);
+  
+    }
+  
+  
+    .social-4:hover {
+      background: var(--linked_in-cl);
+      color: var(--white);
+  
+    }
+  
+    .slider-1-container {
+      width: 60%;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: url(/assets/img/30656.jpg);
+    }
+  
+    .slider-1 {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+  
+    .slide-1{
+      min-width: 100%;
+      box-sizing: border-box;
+      padding: 10px;
+      text-align: center;
+      color: var(--white);
+      font-size: 25px;
+    }
+  
   
     .header-user-actions {
       display: flex;
@@ -2220,7 +2163,7 @@
       transition: var(--transition-timing);
     }
   
-    .desktop-menu-category-list .menu-category > .menu-title:hover { color: var(--salmon-pink); }
+    .desktop-menu-category-list .menu-category > .menu-title:hover { color: var(--dodgerBlue); }
     
     .desktop-menu-category-list .menu-category > .menu-title::after {
       content: '';
