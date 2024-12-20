@@ -81,3 +81,31 @@ for (let i = 0; i < accordionBtn.length; i++) {
   });
 
 }
+
+
+/* Search
+
+-------------------------------------------------------*/
+var $searchWrap = $('.search-wrap');
+
+$('.search-trigger').on('click', function (e) {
+    e.preventDefault();
+    $searchWrap.addClass('open');
+});
+
+$('.search-close').on('click', function (e) {
+    e.preventDefault();
+    $searchWrap.removeClass('open');
+});
+
+function closeSearch() {
+    $searchWrap.removeClass('open');
+}
+
+$(document.body).on('click', function () {
+    closeSearch();
+});
+
+$(".search-trigger, .main-search-input").on('click', function (e) {
+    e.stopPropagation();
+});
