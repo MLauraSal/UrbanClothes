@@ -43,11 +43,12 @@
     }
   
    
+   
     
-
-    
- 
- 
+    .mobile-bottom-navigation {
+      border-top-left-radius: var(--border-radius-md);
+      border-top-right-radius: var(--border-radius-md);
+    }
   
   
   
@@ -68,12 +69,8 @@
       
     
       
-      /*mobile*/
+      
     
-    .mobile-bottom-navigation {
-      border-top-left-radius: var(--border-radius-md);
-      border-top-right-radius: var(--border-radius-md);
-    }
   
   
   
@@ -136,10 +133,9 @@
   @media (min-width: 570px) {
   
  
-   * #HEADER
-   */
+    /*-- #HEADER --*/
 
-
+  
     
     .header-social-container,
     .header-top-actions {
@@ -258,8 +254,6 @@
   
     }
   
-  
-  
     /**
        * #BASE 
        */
@@ -267,8 +261,6 @@
     html {
       font-size: 17px;
     }
-  
-  
   
     /**
        * #REUSED STYLE 
@@ -278,8 +270,6 @@
       max-width: 750px;
       margin: auto;
     }
-  
-  
   
     /**
        * #MODAL 
@@ -300,12 +290,6 @@
       text-align: left;
     }
   
-  
-
-   
- 
- 
- 
    /**
     * #BANNER 
     */
@@ -330,23 +314,11 @@
     
   }
   
- 
-  
-  
-  
   .btn-slider {
     
     padding: 12px 24px;
   }
 
-  
-  
-  
-  
-  
-    
-  
-  
     /**
        * #CATEGORY 
        */
@@ -430,7 +402,7 @@
      * responsive larger than 1024px screen
      */
     
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
     
       /**
        * #CUSTOM PROPERTY
@@ -459,8 +431,7 @@
     
     
     
-   
-      /**
+    /**
        * #HEADER 
        */
      
@@ -770,69 +741,58 @@
       display: none;
     }
     
-    
-       /**
+      /**
        * #BANNER 
        */
-
-  .banner {
-    margin-top: 40px;
-  }
-
-  .slider-item {
-    height: 500px;
-  }
-
-  .slider-item .box-content {
-    position: absolute;
+    
+      .banner { margin-top: 0px; }
+    
+      .slider-item { height: 500px; }
+    
+      .slider-item .box-content {
+      position: absolute;
     left: 0;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-  }
-
-  .slider-item .box-content h1 {
-    margin-bottom: 18px;
-    color: var(--white);
-    transition-delay: 0.5s;
-  }
-
-  .slider-item .box-content h1 span {
-    color: var(--sonic-silver);
-    transition-delay: 0.5s;
-  }
-
-  .slider-item .box-content p {
-    margin-bottom: 48px;
-    font-size: 20px;
-    line-height: 24px;
-    transition-delay: 0.6s;
-  }
-
-  .btn-slider {
-
-    padding: 0;
-    padding-bottom: 7px;
-
-    position: relative;
-    background-color: transparent;
-    border: 1px solid var(--white);
-    color: var(--white);
-    transition-delay: 0.7s;
-  }
-
-  .btn-slider:hover {
-    color: var(--cultured);
-    border-color: var(--white);
-    background-color: var(--white);
-  }
-
-  .btn-slider .icon {
-    margin-inline-start: 8px;
-    display: inline-block;
-    font-size: 8px;
-  }
-
+     }
+     .slider-item .box-content h1 {
+      margin-bottom: 18px;
+      color: var(--white);
+      transition-delay: 0.5s;
+    }
+  
+    .slider-item .box-content h1 span {
+      color: var(--sonic-silver);
+      transition-delay: 0.5s;
+    }
+    .slider-item .box-content p {
+      margin-bottom: 48px;
+      font-size: 20px;
+      line-height: 24px;
+      transition-delay: 0.6s;
+    }
+    .btn-slider {
+      
+        padding: 0;
+        padding-bottom: 7px;
+       
+        position: relative;
+        background-color: transparent;
+        border: 1px solid var(--white);
+        color: var(--white);
+      transition-delay: 0.7s;
+    }
+    .btn-slider:hover {
+      color: var(--cultured);
+      border-color: var(--white);
+      background-color: var(--white);
+    }
+    .btn-slider .icon {
+      margin-inline-start: 8px;
+      display: inline-block;
+      font-size: 8px;
+    }
       /**
        * #CATEGORY 
        */
@@ -969,7 +929,37 @@
       margin-bottom: 0;
     }
   
+   /**
+       * #CART
+       */
   
+    .cart-countdown {
+      margin-bottom: 68px;
+    }
+    .cart-countdown p {
+      font-size: 20px;
+      line-height: 32px;
+    }
+    .cart-countdown .timer-count {
+      font-size: 20px;
+      line-height: 32px;
+      min-width: 117px;
+    }
+    .page-cart-wrap {
+      display: grid;
+      grid-template: repeat(2, auto)/66% 1fr;
+      column-gap: 3rem;
+    }
+    
+    .cart-item .cart-info .cart-title {
+      font-size: 16px;
+      list-style: 22.4px;
+    }
+    .cart-footer-inner {
+      position: sticky;
+      top: 100px;
+      transition: top 0.3s ease;
+    }
   
   }
   
