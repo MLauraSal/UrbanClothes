@@ -1,11 +1,11 @@
-const apiKey = ''; // Reemplaza con tu clave de API
+const apiKey = '4d507bef141cf821e38f1f93c895e2ff'; // clave de API
 const weatherForm = document.getElementById('weather-form');
 const weatherResult = document.getElementById('weather-result');
 
 weatherForm.addEventListener('submit', async (event) => {
   event.preventDefault();
   const city = document.getElementById('city').value;
-  http://dataservice.accuweather.com/locations/v1/cities/autocomplete
+
   try {
     const response = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=es`

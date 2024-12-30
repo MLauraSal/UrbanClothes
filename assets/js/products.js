@@ -185,7 +185,7 @@ function initApp(){
                 
 
 
-                     <button class="add-cart btn-cart" onclick="addToCard(${key}) >Shop Now</button>
+                     <button class="btn-cart" onclick="addToCard(${key}) >Shop Now</button>
                
                 
             </div>

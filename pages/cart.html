@@ -675,45 +675,52 @@
     - MAIN
   -->
 
+ 
   <main class="main">
+
     <div class="page-header ">
       <div class="container">
-        <h1 class="page-title">Shopping Cart<span>Shop</span></h1>
+        <h1 class="page-title"><span>Shop</span></h1>
       </div><!-- End .container -->
     </div><!-- End .page-header -->
-      
-      <section class="page-content">
-        <!-- Carrito de compras -->
-    <div class="container mt-5">
-      <h2 class="mb-4">Carrito de Compras</h2>
 
-      <table class="table table-bordered">
-          <thead class="table-dark">
-              <tr>
-                  <th>Imagen</th>
-                  <th>Producto</th>
-                  <th>Precio</th>
-                  <th>Cantidad</th>
-                  <th>Subtotal</th>
-                  
-              </tr>
-          </thead>
-          <tbody id="cart-items">
-              <!-- Aquí se cargarán los productos del carrito -->
-          </tbody>
-      </table>
-
-      <div class="text-end mb-3">
-          <h4>Total: $<span id="total">0</span></h4>
+    <section class="section">
+      <div class="container wide">
+        <div class="wrap">
+          <div class="heading">
+            <h1>Cart</h1>
+            <div class="content">
+              <div class="cart-table">
+                <div class="product-list has-bg">
+                  <div class="table-title">
+                    <ul>
+                      <li class="dotgrid">
+                        <div class="grouping wrapper">
+                          <span></span>
+                          <span>Product</span>
+                        </div>
+                        <div class="grouping wrapper">
+                          <span>Price</span>
+                          <span>Qty</span>
+                          <span>Total</span> 
+                          <span></span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-total"></div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
+  
 
-      <div class="d-flex justify-content-between">
-          <button id="update-cart" class="btn btn-danger">Volver al Inicio</button>
-          <button id="checkout" class="btn btn-success">Finalizar Compra</button>
-      </div>
-  </div>
-      </section><!-- End .page-content -->
-  </main><!-- End .main -->
+    
+  </main>
+  <!--
 
 
 
