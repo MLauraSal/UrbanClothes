@@ -49,6 +49,8 @@
   --border-radius-md: 10px;
   --border-radius-sm: 5px;
 
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.1);
+
   /*transition */
 
   --transition-timing: 0.2s ease;
