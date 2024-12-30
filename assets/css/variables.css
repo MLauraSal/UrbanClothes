@@ -168,7 +168,9 @@ video {
   \*-----------------------------------*/
 
 .container {
+  max-width: 1200px;
   padding: 0 15px;
+  margin: 0 auto;
 }
 
 .has-scrollbar {
@@ -207,6 +209,46 @@ video {
   margin-bottom: 30px;
 }
 
+.mensaje-producto {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  animation: fadeOut 2s ease-in-out forwards;
+}
 
+@keyframes fadeOut {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+
+
+
+
+.item-floating {
+  position: absolute;
+  font-size: 10px;
+  font-weight: var(--weight-600);
+  top: -12px;
+  right: 0;
+  background-color: var(--dodgerBlue);
+  color: var(--white);
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
 
 

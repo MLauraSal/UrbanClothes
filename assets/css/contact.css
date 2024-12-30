@@ -52,16 +52,18 @@
   
   
   
-  
+
 /*-----------------------------------*\
   #SECTION CONTACT
 \*-----------------------------------*/
+
+
 .contact {
     max-width: 900px;
     margin: 150px auto 150px auto; 
     padding: 40px;
     height: auto;
-    background:var(--white); 
+
     border-radius: 10px; 
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.1);
 }
