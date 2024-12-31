@@ -216,7 +216,7 @@ const updateCartHTML = () => {
         <div class="price">$${(product.precio * item.quantity).toFixed(2)}</div>
         <div class="quantity">
           <button class="minus">-</button>
-          <span>${item.quantity}</span>
+          <p class="cant">${item.quantity}</p>
           <button class="plus">+</button>
         </div>
       `;
