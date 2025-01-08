@@ -131,16 +131,16 @@ function initApp() {
         <img src="${value.imagenHover}" alt="${value.titulo}" width="300" class="product-img hover">
         <p class="showcase-badge">15%</p>
         <div class="showcase-actions">
-           <button class="btn-action">
-            <ion-icon name="heart-outline"></ion-icon>
+           <button >
+            <ion-icon name="heart-outline" class="btn-action"></ion-icon>
           </button>
 
-          <button class="btn-action">
-            <ion-icon name="eye-outline"></ion-icon>
+          <button >
+            <ion-icon name="eye-outline" class="btn-action"></ion-icon>
           </button>
 
-          <button class="btn-action">
-            <ion-icon name="repeat-outline"></ion-icon>
+          <button >
+            <ion-icon name="repeat-outline" class="btn-action"></ion-icon>
           </button>
           <button onclick="addToCart(${value.id})">
             <ion-icon name="bag-handle-outline" class="btn-action"></ion-icon>

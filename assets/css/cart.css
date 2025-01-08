@@ -7,59 +7,59 @@
 
 :root {
 
-  /*colors*/
+    /*colors*/
 
-  --spanish-gray: hsl(0, 0%, 60%);
-  --sonic-silver: hsl(0, 0%, 47%);
-  --eerie-black: hsl(0, 0%, 13%);
-  --dodgerBlue: hsl(210 100% 55.9%);
-  --sandy-brown: hsl(29, 90%, 65%);
-  --deepSkyBlue: hsla(195.06, 100%, 50%, 1);
-  --ocean-green: hsl(152, 51%, 52%);
-  --davys-gray: hsl(0, 0%, 33%);
-  --cultured: hsl(0, 0%, 93%);
-  --white: hsl(0, 100%, 100%);
-  --onyx: hsl(0, 0%, 27%);
+    --spanish-gray: hsl(0, 0%, 60%);
+    --sonic-silver: hsl(0, 0%, 47%);
+    --eerie-black: hsl(0, 0%, 13%);
+    --dodgerBlue: hsl(210 100% 55.9%);
+    --sandy-brown: hsl(29, 90%, 65%);
+    --deepSkyBlue: hsla(195.06, 100%, 50%, 1);
+    --ocean-green: hsl(152, 51%, 52%);
+    --davys-gray: hsl(0, 0%, 33%);
+    --cultured: hsl(0, 0%, 93%);
+    --white: hsl(0, 100%, 100%);
+    --onyx: hsl(0, 0%, 27%);
 
-  --facebook-cl: rgb(59, 89, 152);
-  --linked_in-cl: rgb(23, 106, 255);
-  --twitter-cl: rgb(85, 85, 85);
-  --instagram-cl: linear-gradient(#8a3ab9, #e95950, #fccc63);
+    --facebook-cl: rgb(59, 89, 152);
+    --linked_in-cl: rgb(23, 106, 255);
+    --twitter-cl: rgb(85, 85, 85);
+    --instagram-cl: linear-gradient(#8a3ab9, #e95950, #fccc63);
 
-  /* typography */
+    /* typography */
 
-  --fs-1: 1.563rem;
-  --fs-2: 1.375rem;
-  --fs-3: 1.25rem;
-  --fs-4: 1.125rem;
-  --fs-5: 1rem;
-  --fs-6: 0.938rem;
-  --fs-7: 0.875rem;
-  --fs-8: 0.813rem;
-  --fs-9: 0.75rem;
-  --fs-10: 0.688rem;
-  --fs-11: 0.625rem;
+    --fs-1: 1.563rem;
+    --fs-2: 1.375rem;
+    --fs-3: 1.25rem;
+    --fs-4: 1.125rem;
+    --fs-5: 1rem;
+    --fs-6: 0.938rem;
+    --fs-7: 0.875rem;
+    --fs-8: 0.813rem;
+    --fs-9: 0.75rem;
+    --fs-10: 0.688rem;
+    --fs-11: 0.625rem;
 
-  --weight-300: 300;
-  --weight-400: 400;
-  --weight-500: 500;
-  --weight-600: 600;
-  --weight-700: 700;
+    --weight-300: 300;
+    --weight-400: 400;
+    --weight-500: 500;
+    --weight-600: 600;
+    --weight-700: 700;
 
-  /* border-radius */
+    /* border-radius */
 
-  --border-radius-md: 10px;
-  --border-radius-sm: 5px;
+    --border-radius-md: 10px;
+    --border-radius-sm: 5px;
 
-  /*transition */
+    /*transition */
 
-  --transition-timing: 0.2s ease;
+    --transition-timing: 0.2s ease;
 
 }
 
 
 .main {
-    
+
     width: 100%
 }
 
@@ -75,8 +75,8 @@
 
 .page-header h1 {
     color: var(--dodgerBlue);
- 
-    font-size: 6rem;
+
+    font-size: 3rem;
     letter-spacing: 1.2;
     margin-bottom: 0
 }
@@ -84,41 +84,13 @@
 .page-header h1 span {
     display: block;
     color: var(--eerie-black);
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin-top: .8rem
 }
 
-.page-header.page-header-big {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 250px;
-    margin-bottom: 5rem;
-    text-align: center;
-}
-
-.page-header.page-header-big h1 span {
-    font-size: 1.6rem;
-    margin-top: .4rem;
-    letter-spacing: 0
-}
 
 
 @media screen and (min-width: 768px) {
-    .page-header h1 {
-        font-size: 3.6rem
-    }
-
-    .page-header h1 span {
-        font-size: 1.8rem
-    }
-
-    .page-header.page-header-big {
-        min-height: 350px
-    }
-}
-
-@media screen and (min-width: 992px) {
     .page-header h1 {
         font-size: 4rem
     }
@@ -127,8 +99,75 @@
         font-size: 2rem
     }
 
-    .page-header.page-header-big {
-        min-height: 450px
-    }
 }
 
+@media screen and (min-width: 992px) {
+    .page-header h1 {
+        font-size: 6rem
+    }
+
+    .page-header h1 span {
+        font-size: 3rem
+    }
+
+    .breadcrumb {
+      
+        padding: 30px 0 40px;
+    }
+
+
+    .breadcrumb ul li {
+
+        margin-right: 10px;
+
+    }
+
+    .breadcrumb ul li:not(:first-child) {
+        padding-left: 25px;
+    }
+
+    .breadcrumb li a {
+        font-size: 25px;
+    }
+
+    .breadcrumb li a >span {
+       
+        font-size: 20px;
+    }
+
+
+}
+
+/*------------------------ 
+      #BREADCRUMB
+------------------------ */
+
+.breadcrumb {
+    width: 100%;
+    line-height: initial;
+    padding: 10px 0 30px;
+}
+
+.breadcrumb ul {
+    justify-content: center;
+}
+
+.breadcrumb ul li {
+    position: relative;
+    margin-right: 5px;
+
+}
+
+
+.breadcrumb li a {
+    font-size: 14px;
+}
+
+.breadcrumb ul li span {
+    color: var(--eerie-black);
+}
+
+.breadcrumb ul li a>span {
+    color: var(--dodgerBlue);
+    font-size: 12px;
+}
